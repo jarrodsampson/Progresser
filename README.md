@@ -24,6 +24,8 @@ Indicate to your users with style. Designed by [planlodge](https://github.com/pl
 
 ## Full Example
 
+[**Demo Link**](https://planlodge.github.io/Progresser/demo/) 
+
     <!DOCTYPE html>
     <html lang="en-US">
 
