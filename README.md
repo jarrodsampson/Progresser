@@ -63,5 +63,5 @@ Indicate to your users with style. Designed by [planlodge](https://github.com/pl
 
 ## License
 
-Progresser is licensed under the [Apache license](http://opensource.org/licenses/MIT).
+Progresser is licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
