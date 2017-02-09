@@ -72,7 +72,7 @@ Indicate to your users with style. Designed by [planlodge](https://github.com/pl
 	
 ## Options
 
-- **onBottomAction()** - On Hitting the bottom of the page, add any code here.
+- **onBottomAction()** - On hitting the bottom of the page, add any code here.
 
 - **onTopAction()** - Upon returning to the top of the page, add any code here.
 
