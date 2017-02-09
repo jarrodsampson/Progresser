@@ -9,8 +9,18 @@ Indicate to your users with style. Designed by [planlodge](https://github.com/pl
 ## Getting Started
 
  1. Include jQuery in your code.
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 
  2. Download and include the progresser.js and progresser.css files.
+ 
+ 		<link rel="stylesheet" href="../build/progresser.css" />
+		<script src="../build/progresser.js"></script>
  3. Pick your selector and apply progresser to it!
+ 	
+		<progress class="progresser" value="0"></progress>
+		$('.progresser').progresser();
+ 		
 
 ## Full Example
 
