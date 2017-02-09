@@ -70,6 +70,11 @@ Indicate to your users with style. Designed by [planlodge](https://github.com/pl
 
     </html>
 	
+## Options
+
+- **onBottomAction()** - On Hitting the bottom of the page, add any code here.
+
+- **onTopAction()** - Upon returning to the top of the page, add any code here.
 
 ## License
 
