@@ -32,6 +32,8 @@
         init: function(options) {
 
             var defaults = {
+                selectedContent: '',
+                mySelector: this.selector,
                 onBottomAction:	function() {},
                 onTopAction:	function() {}
             };
@@ -46,11 +48,16 @@
 
                 var winHeight = $(window).height(),
                     docHeight = $(document).height(),
-                    progressBar = $('.progresser'),
+                    progressBar = $(defaults.mySelector),
                     max, value;
 
                 /* Set the max scrollable area */
-                max = docHeight - winHeight;
+                if (defaults.selectedContent.length < 1) {
+                    max = docHeight - winHeight;
+                } else {
+                    var contentLength = document.getElementById(defaults.selectedContent).offsetHeight;
+                    max = docHeight - winHeight - contentLength;
+                }
                 progressBar.attr('max', max);
 
                 $(document).on('scroll', function(){
@@ -58,17 +65,24 @@
                     progressBar.attr('value', value);
 
                     if (value == max) {
-
                         defaults.onBottomAction();
-
                     }
 
                     if (value == 0) {
-
                         defaults.onTopAction();
-
                     }
 
+                });
+
+                $(window).on('resize', function() {
+                    winHeight = $(window).height();
+                    docHeight = $(document).height();
+
+                    max = docHeight - winHeight - contentLength;
+                    progressBar.attr('max', max);
+
+                    value =  $(window).scrollTop();
+                    progressBar.attr('value', value);
                 });
 
 
