@@ -28,7 +28,7 @@ Indicate to your users with style. Designed by [planlodge](https://github.com/pl
 
 [**Demo Link**](https://planlodge.github.io/Progresser/demo/) 
 
-    	<!DOCTYPE html>
+    <!DOCTYPE html>
 	<html lang="en-US">
 
 	<head>
